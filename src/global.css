@@ -11,11 +11,13 @@ nav{
     display: flex;
     align-items: center;
     justify-content: center;
+    list-style-type: none;
 }
 .nav-link{
     margin: 30px;
     color: chartreuse;
     text-decoration: none;
+
 }
 
 nav .active{
