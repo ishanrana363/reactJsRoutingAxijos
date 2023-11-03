@@ -21,3 +21,98 @@ nav{
 nav .active{
     color: red;
 }
+
+.title{
+    padding: 20px 40px;
+    font-size: 25px;
+    color: red;
+}
+
+.body{
+    padding: 20px 40px;
+    font-size: 20px;
+}
+.learn-more{
+    padding-left: 42px;
+}
+
+section{
+    display: grid;
+    grid-gap: 1rem;
+    grid-template-columns: auto auto auto;
+}
+article{
+    background-color: aquamarine;
+}
+@media screen and (min-width:600px){
+    section{
+        display: grid;
+        grid-template-columns: auto auto ;
+
+    }
+}
+@media screen and (min-width:992px){
+    section{
+        display: grid;
+        grid-template-columns: auto auto auto ;
+
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
