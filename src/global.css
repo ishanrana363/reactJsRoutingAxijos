@@ -17,3 +17,7 @@ nav{
     color: chartreuse;
     text-decoration: none;
 }
+
+nav .active{
+    color: red;
+}
