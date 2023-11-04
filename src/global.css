@@ -43,6 +43,9 @@ section{
     grid-gap: 1rem;
     grid-template-columns: auto auto auto;
 }
+li{
+    list-style-type: none;
+}
 article{
     background-color: aquamarine;
 }
