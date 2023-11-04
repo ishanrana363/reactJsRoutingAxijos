@@ -1,6 +1,6 @@
 //
 // import {BrowserRouter, PRoutes, Routes} from "react-router-dom";
-// import Home from "./Component/Dynamic-Routing/pages/Home.jsx";
+// import Home from "./Component/Dynamic-Routing/pages/Raxios.jsx";
 // import Blogs from "./Component/Dynamic-Routing/pages/Blogs.jsx";
 // import Product from "./Component/Dynamic-Routing/pages/Product.jsx";
 // import Contact from "./Component/Dynamic-Routing/pages/Contact.jsx";
@@ -30,7 +30,7 @@
 
 
 // import {BrowserRouter, PRoutes, Routes} from "react-router-dom";
-// import Home from "./Component/UseLocationHookDRouting/Pages/Home.jsx";
+// import Home from "./Component/UseLocationHookDRouting/Pages/Raxios.jsx";
 // import Blogs from "./Component/UseLocationHookDRouting/Pages/Blogs.jsx";
 // import About from "./Component/UseLocationHookDRouting/Pages/About.jsx";
 // import Product from "./Component/UseLocationHookDRouting/Pages/Product.jsx";
@@ -61,48 +61,58 @@
 // export default App;
 
 
-import {BrowserRouter, Routes,Route} from "react-router-dom";
-import Home from "./Component/ProtectedRoute/Pages/Home.jsx";
-import AddBlog from "./Component/ProtectedRoute/Pages/AddBlog.jsx";
-import About from "./Component/ProtectedRoute/Pages/About.jsx";
-import PRoutes from "./Component/ProtectedRoute/Route/PRoutes.jsx";
-import Error from "./Component/ProtectedRoute/Pages/Error.jsx";
-import {useState} from "react";
-import ProtectedRoute from "./Component/ProtectedRoute/Component/ProtectedRoute.jsx";
+// import {BrowserRouter, Routes,Route} from "react-router-dom";
+// import Home from "./Component/ProtectedRoute/Pages/Home.jsx";
+// import AddBlog from "./Component/ProtectedRoute/Pages/AddBlog.jsx";
+// import About from "./Component/ProtectedRoute/Pages/About.jsx";
+// import PRoutes from "./Component/ProtectedRoute/Route/PRoutes.jsx";
+// import Error from "./Component/ProtectedRoute/Pages/Error.jsx";
+// import {useState} from "react";
+// import ProtectedRoute from "./Component/ProtectedRoute/Component/ProtectedRoute.jsx";
+//
+// const App = () => {
+//     const [isLogin,setIsLogin] = useState(false)
+//     return (
+//         <div>
+//             <BrowserRouter>
+//                 <PRoutes/>
+//                 {isLogin ? (
+//                     <button onClick={()=>{
+//                         setIsLogin(!isLogin)
+//                     }} >
+//                         Logout
+//                     </button>
+//                 ) :(
+//                     <button onClick={()=>{setIsLogin(!isLogin)}} >
+//                         Login
+//                     </button>
+//                 ) }
+//                 <Routes>
+//                     <Route path= "/" element={<Home/>}/>
+//                     <Route path= "/addblog" element={<ProtectedRoute isLogin={isLogin} >
+//                         <AddBlog/>
+//                     </ProtectedRoute>} />
+//                     <Route path= "/about" element={<About/>} />
+//                     <Route path="*" element={<Error/>} />
+//                 </Routes>
+//             </BrowserRouter>
+//         </div>
+//     );
+// };
+//
+// export default App;
+
+import HomePage from "./Component/ReactAxios/Pages/HomePage.jsx";
 
 const App = () => {
-    const [isLogin,setIsLogin] = useState(false)
     return (
         <div>
-            <BrowserRouter>
-                <PRoutes/>
-                {isLogin ? (
-                    <button onClick={()=>{
-                        setIsLogin(!isLogin)
-                    }} >
-                        Logout
-                    </button>
-                ) :(
-                    <button onClick={()=>{setIsLogin(!isLogin)}} >
-                        Login
-                    </button>
-                ) }
-                <Routes>
-                    <Route path= "/" element={<Home/>}/>
-                    <Route path= "/addblog" element={<ProtectedRoute isLogin={isLogin} >
-                        <AddBlog/>
-                    </ProtectedRoute>} />
-                    <Route path= "/about" element={<About/>} />
-                    <Route path="*" element={<Error/>} />
-                </Routes>
-            </BrowserRouter>
+            <HomePage/>
         </div>
     );
 };
 
 export default App;
-
-
 
 
 
