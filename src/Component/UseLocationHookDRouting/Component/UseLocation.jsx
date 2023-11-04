@@ -10,7 +10,7 @@ const UseLocation = () => {
                         <NavLink className= "nav-link" to= "/blogs"> Blogs </NavLink>
                         <NavLink className= "nav-link" to= "/about" >About</NavLink>
                         <NavLink className= "nav-link" to= "/product" >Product</NavLink>
-
+                        <NavLink className= "nav-link" to= "/user">User</NavLink>
                     </li>
                 </ul>
             </nav>

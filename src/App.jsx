@@ -37,6 +37,7 @@ import Product from "./Component/UseLocationHookDRouting/Pages/Product.jsx";
 import NotFound from "./Component/UseLocationHookDRouting/Pages/NotFound.jsx";
 import UseLocation from "./Component/UseLocationHookDRouting/Component/UseLocation.jsx";
 import Blog from "./Component/UseLocationHookDRouting/Pages/Blog.jsx";
+import User from "./Component/UseLocationHookDRouting/Pages/User.jsx";
 
 const App = () => {
     return (
@@ -49,6 +50,7 @@ const App = () => {
                     <Route path= "blogs/:title" element= {<Blog/>} />
                     <Route path="/about" element={<About/>} />
                     <Route path= "/product" element={<Product/>}/>
+                    <Route path= "/user" element={<User/>} />
                     <Route path = "*" element={<NotFound/>} />
                 </Routes>
             </BrowserRouter>
